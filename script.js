@@ -28,7 +28,7 @@ let colors2 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
 let myChart2 = document.getElementById("myChart2").getContext('2d');
 
 let chart2 = new Chart(myChart2, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
         labels: labels2,
         datasets: [{
@@ -38,7 +38,7 @@ let chart2 = new Chart(myChart2, {
     },
     options: {
         title: {
-            text: "Do you like doughnuts?",
+            text: "Number of passenger carried in 2017 (in mio.)",
             display: true
         }
     }
