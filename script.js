@@ -40,6 +40,35 @@ let chart2 = new Chart(myChart2, {
         title: {
             text: "Number of passenger carried in 2017 (in mio.)",
             display: true
+        },
+        legend: {
+            display: false
+        }
+    }
+});
+
+let labels3 = ['Attack', 'Defense', 'Passing', 'Tackle'];
+let data2 = [199.6, 130.3, 126.3, 130];
+let colors2 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
+
+let myChart2 = document.getElementById("myChart2").getContext('2d');
+
+let chart2 = new Chart(myChart2, {
+    type: 'bar',
+    data: {
+        labels: labels2,
+        datasets: [{
+            data: data2,
+            backgroundColor: colors2
+        }]
+    },
+    options: {
+        title: {
+            text: "Number of passenger carried in 2017 (in mio.)",
+            display: true
+        },
+        legend: {
+            display: false
         }
     }
 });
