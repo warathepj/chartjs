@@ -47,16 +47,16 @@ let chart2 = new Chart(myChart2, {
     }
 });
 
-let labels3 = ['Attack', 'Defense', 'Passing', 'Tackle'];
-let data2 = [199.6, 130.3, 126.3, 130];
-let colors2 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
+let labels3 = ['Attack', 'Defense', 'Passing', 'Tackle', 'Speed'];
+// let data2 = [199.6, 130.3, 126.3, 130];
+// let colors2 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
 
-let myChart2 = document.getElementById("myChart2").getContext('2d');
+let myChart3 = document.getElementById("myChart3").getContext('2d');
 
-let chart2 = new Chart(myChart2, {
-    type: 'bar',
+let chart3 = new Chart(myChart3, {
+    type: 'radar',
     data: {
-        labels: labels2,
+        labels: labels3,
         datasets: [{
             data: data2,
             backgroundColor: colors2
