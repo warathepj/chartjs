@@ -57,18 +57,57 @@ let chart3 = new Chart(myChart3, {
     type: 'radar',
     data: {
         labels: labels3,
+        datasets: [
+            {
+                label: 'Messi',
+                fill: true,
+                backgroundColor: "rgba(179, 181, 198, 0.2)",
+                borderColor: "rgba(179, 181, 198, 1)",
+                pointBorderColor: "#fff",
+                pointBackgroundColor: "rgba(179, 181, 198, 1)",
+                data: [50, 12, 55, 7, 29]
+            },
+            {
+                label: 'Ronaldo',
+                fill: true,
+                backgroundColor: "rgba(255, 99, 132, 0.2)",
+                borderColor: "rgba(255, 99, 132, 1)",
+                pointBorderColor: "#fff",
+                pointBackgroundColor: "rgba(255, 99, 132, 1)",
+                data: [51, 10, 32, 20, 44]
+            }
+        ]
+    },
+    options: {
+        title: {
+            text: "Skill",
+            display: true
+        }
+        // legend: {
+        //     display: false
+        // }
+    }
+});
+
+let labels4 = ['YES', 'YES BUT IN GREEN'];
+let data4 = [69, 31];
+let colors4 = ['#49A9EA', '#36CAAB'];
+
+let myChart4 = document.getElementById("myChart").getContext('2d');
+
+let chart4 = new Chart(myChart4, {
+    type: 'doughnut',
+    data: {
+        labels: labels4,
         datasets: [{
-            data: data2,
-            backgroundColor: colors2
+            data: data4,
+            backgroundColor: colors4
         }]
     },
     options: {
         title: {
-            text: "Number of passenger carried in 2017 (in mio.)",
+            text: "Do you like doughnuts?",
             display: true
-        },
-        legend: {
-            display: false
         }
     }
 });
